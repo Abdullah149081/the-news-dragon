@@ -11,7 +11,7 @@ const Header = () => {
   return (
     <Container>
       <div className="text-center mt-5">
-        <img src={logo} alt="logo" />
+        <img className="img-fluid" src={logo} alt="logo" />
         <p className="header-title">Journalism Without Fear or Favour</p>
         <p className="time-date">
           <span style={{ color: "#403f3f" }}>{moment().format("dddd")}</span>, <span style={{ color: "#706F6F" }}>{moment().format("MMMM D, YYYY")}</span>
