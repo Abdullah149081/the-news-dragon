@@ -2,7 +2,8 @@ import Button from "react-bootstrap/Button";
 import ListGroup from "react-bootstrap/ListGroup";
 import { FaFacebookF, FaGithub, FaGoogle, FaInstagram, FaTwitter } from "react-icons/fa";
 import bg from "../../../assets/bg.png";
-import QZone from "../Qzone/Qzone";
+
+import QZone from "../Q_Zone/QZone";
 import "./RightNav.css";
 
 const RightNav = () => {
