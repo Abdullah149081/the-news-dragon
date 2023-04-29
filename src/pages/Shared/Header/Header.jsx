@@ -26,18 +26,18 @@ const Header = () => {
         </Marquee>
       </div>
       <div style={{ marginTop: "21px" }}>
-        <Navbar collapseOnSelect expand="lg" bg="light" variant="light">
+        <Navbar collapseOnSelect expand="lg">
           <Container>
             <Navbar.Brand />
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
-              <Nav className="mx-auto">
-                <Nav.Link href="#features">Home</Nav.Link>
-                <Nav.Link href="#pricing">About</Nav.Link>
-                <Nav.Link href="#pricing">Career</Nav.Link>
+              <Nav className="mx-auto nav-link">
+                <Nav.Link to="/">Home</Nav.Link>
+                <Nav.Link to="/about">About</Nav.Link>
+                <Nav.Link to="/career">Career</Nav.Link>
               </Nav>
               <Nav className="d-md-inline-flex align-items-md-center">
-                <Nav.Link href="#deets">profile</Nav.Link>
+                <Nav.Link to="/profile">profile</Nav.Link>
                 <Nav.Link className="" eventKey={2} to="/login">
                   <button type="button" className="btn-dragon btn-login">
                     login

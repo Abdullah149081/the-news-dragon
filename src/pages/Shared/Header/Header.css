@@ -20,6 +20,13 @@
   line-height: 30px;
   color: #403f3f;
 }
-.btn-login{
-    background: #403F3F;
+.btn-login {
+  background: #403f3f;
+}
+.nav-link {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+
+  color: #706f6f;
 }
