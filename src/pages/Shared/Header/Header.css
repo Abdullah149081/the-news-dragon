@@ -10,3 +10,13 @@
   font-size: 20px;
   line-height: 30px;
 }
+.baking-news {
+  background: #f3f3f3;
+  padding: 16px;
+}
+.news-highlight {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 30px;
+  color: #403f3f;
+}
