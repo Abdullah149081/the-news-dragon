@@ -8,7 +8,7 @@ const Category = () => {
 
   return (
     <div className="mt-4">
-      {categoryNews.map((news) => (
+      {categoryNews?.map((news) => (
         <NewsCart key={news._id} news={news} />
       ))}
     </div>

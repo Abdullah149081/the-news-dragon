@@ -43,9 +43,9 @@ const NewsCart = ({ news }) => {
       <Card.Footer className="text-muted d-flex align-items-center">
         <div className="flex-grow-1 d-flex  gap-2 ">
           <Rating readonly placeholderRating={rating?.number} emptySymbol={<FaRegStar />} placeholderSymbol={<FaStar style={{ color: "#FF8C47" }} />} fullSymbol={<FaStar />} />
-          <span>{rating?.number}</span>
+          <span className="rating">{rating?.number}</span>
         </div>
-        <div>
+        <div className="rating">
           <FaEye /> {total_view}
         </div>
       </Card.Footer>

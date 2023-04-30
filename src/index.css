@@ -3,6 +3,9 @@
 :root {
   font-family: "Poppins", sans-serif;
 }
+a {
+  text-decoration: none;
+}
 
 .btn-dragon {
   height: 48px;
