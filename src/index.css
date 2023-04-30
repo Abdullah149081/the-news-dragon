@@ -19,3 +19,10 @@
   background: #d72050;
   color: #000;
 }
+
+.dragon-title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  color: #403f3f;
+}

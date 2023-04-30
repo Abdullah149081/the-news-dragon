@@ -1,0 +1,24 @@
+.national-news {
+  background: #e7e7e7;
+  border: 1px solid #e7e7e7;
+  border-radius: 5px;
+  width: 267px;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.category-link {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  margin-left: 50px;
+  
+}
+
+.category-link a {
+  text-decoration: none;
+  color: #9f9f9f;
+}
