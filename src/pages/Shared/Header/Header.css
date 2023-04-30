@@ -23,10 +23,11 @@
 .btn-login {
   background: #403f3f;
 }
-.nav-link {
+
+.nav-link a {
+  text-decoration: none;
+  color: #706f6f;
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
-
-  color: #706f6f;
 }

@@ -1,0 +1,21 @@
+.newsCart-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 35px;
+  color: #403f3f;
+  margin-bottom: 20px;
+}
+.newsCart-details {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #706f6f;
+  margin-top: 30px;
+}
+.news-link {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 26px;
+  color: #ff8c47;
+  text-decoration: none;
+}

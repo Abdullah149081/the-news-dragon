@@ -18,6 +18,7 @@ const Main = () => {
             <LeftNav />
           </Col>
           <Col lg={6}>
+            <h4 className="dragon-title">Dragon News Home</h4>
             <Outlet />
           </Col>
           <Col lg={3}>

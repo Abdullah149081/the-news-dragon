@@ -4,6 +4,7 @@ import Nav from "react-bootstrap/Nav";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import Navbar from "react-bootstrap/Navbar";
 import Marquee from "react-fast-marquee";
+import { Link } from "react-router-dom";
 import logo from "../../../assets/logo.png";
 import "./Header.css";
 
@@ -31,10 +32,13 @@ const Header = () => {
             <Navbar.Brand />
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
-              <Nav className="mx-auto nav-link">
-                <Nav.Link to="/">Home</Nav.Link>
+              <Nav className="mx-auto nav-link gap-4 ">
+                <Link to="/">Home</Link>
+                <Link to="/about">About</Link>
+                <Link to="/career">Career</Link>
+                {/* <Nav.Link href="">Home</Nav.Link>
                 <Nav.Link to="/about">About</Nav.Link>
-                <Nav.Link to="/career">Career</Nav.Link>
+                <Nav.Link to="/career">Career</Nav.Link> */}
               </Nav>
               <Nav className="d-md-inline-flex align-items-md-center">
                 <Nav.Link to="/profile">profile</Nav.Link>
