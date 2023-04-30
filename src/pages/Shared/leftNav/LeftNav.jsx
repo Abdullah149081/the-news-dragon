@@ -16,7 +16,7 @@ const LeftNav = () => {
 
   return (
     <div>
-      <h4 className="dragon-title">All Caterogy</h4>
+      <h4 className="dragon-title">All Category</h4>
       <div>
         <div className="national-news">
           <h4 className="dragon-title">National News</h4>

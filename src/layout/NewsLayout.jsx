@@ -4,20 +4,17 @@ import Row from "react-bootstrap/Row";
 import { Outlet } from "react-router-dom";
 import Footer from "../pages/Shared/Footer/Footer";
 import Header from "../pages/Shared/Header/Header";
-import LeftNav from "../pages/Shared/leftNav/LeftNav";
+
 import RightNav from "../pages/Shared/rightNav/RightNav";
 import "./Main.css";
 
-const Main = () => {
+const NewsLayout = () => {
   return (
     <div>
       <Header />
       <Container className="mt-5">
         <Row>
-          <Col lg={3}>
-            <LeftNav />
-          </Col>
-          <Col lg={6}>
+          <Col lg={9}>
             <Outlet />
           </Col>
           <Col lg={3}>
@@ -30,4 +27,4 @@ const Main = () => {
   );
 };
 
-export default Main;
+export default NewsLayout;
