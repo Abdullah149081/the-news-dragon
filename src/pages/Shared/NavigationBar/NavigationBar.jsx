@@ -28,7 +28,13 @@ const NavigationBar = () => {
                 <Link to="/career">Career</Link>
               </Nav>
               <Nav className="d-md-inline-flex align-items-md-center">
-                {user && <FaUserCircle style={{ width: "41px", height: "41px" }} />}
+                {user && (
+                  <>
+                    <span className="dragon-title me-2">{user.displayName}</span>
+                    {/* <FaUserCircle style={{ width: "41px", height: "41px", marginRight: "5px" }} /> */}
+                    <img className="rounded-circle  border border-2 border-primary" style={{ width: "41px", height: "41px", marginRight: "5px" }} src={user.photoURL} alt="" />
+                  </>
+                )}
 
                 {user ? (
                   <button onClick={handlerLogOut} type="button" className="btn-dragon">

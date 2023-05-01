@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 import Spinner from "react-bootstrap/Spinner";
 import { Navigate, useLocation } from "react-router-dom";
 import { AuthContext } from "../provider/AuthProviders";
@@ -23,5 +23,3 @@ const PrivateRoutes = ({ children }) => {
 };
 
 export default PrivateRoutes;
-
-
