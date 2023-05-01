@@ -1,5 +1,3 @@
-import React from "react";
-import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import { Link } from "react-router-dom";
 import "./login.css";
@@ -31,7 +29,7 @@ const Login = () => {
           </span>
         </p>
       </Form>
-      <Form.Text className="text-muted">We'll never share your email with anyone else.</Form.Text>
+      <Form.Text className="text-muted">We ll never share your email with anyone else.</Form.Text>
     </div>
   );
 };
