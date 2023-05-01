@@ -1,4 +1,4 @@
-import { createUserWithEmailAndPassword, getAuth, onAuthStateChanged, signInWithEmailAndPassword, signOut } from "firebase/auth";
+import { createUserWithEmailAndPassword, getAuth, onAuthStateChanged, sendEmailVerification, signInWithEmailAndPassword, signOut, updateProfile } from "firebase/auth";
 import { createContext, useEffect, useMemo, useState } from "react";
 import app from "../firebase/firebase.config";
 
@@ -17,6 +17,17 @@ const AuthProviders = ({ children }) => {
     setLoading(true);
     return signInWithEmailAndPassword(auth, email, password);
   };
+
+  const updateUserData = (newUser, name, photo) => {
+    return updateProfile(newUser, {
+      displayName: name,
+      photoURL: photo,
+    });
+  };
+  const validationEmail = (newUser) => {
+    return sendEmailVerification(newUser);
+  };
+
   const logOut = () => {
     return signOut(auth);
   };
@@ -30,7 +41,7 @@ const AuthProviders = ({ children }) => {
     return () => connection();
   }, []);
 
-  const authInfo = useMemo(() => ({ user, createUser, loading, signIn, logOut }), [loading, user]);
+  const authInfo = useMemo(() => ({ user, createUser, loading, signIn, logOut, updateUserData, validationEmail }), [loading, user]);
 
   return <AuthContext.Provider value={authInfo}>{children}</AuthContext.Provider>;
 };
