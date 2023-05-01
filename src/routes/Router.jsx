@@ -6,6 +6,7 @@ import Category from "../pages/Home/Category/Category";
 import Login from "../pages/Login/Login/Login";
 import Register from "../pages/Login/Register/Register";
 import News from "../pages/News/News/News";
+import Trams from "../pages/Shared/Trams/Trams";
 import PrivateRoutes from "./PrivateRoutes";
 
 const router = createBrowserRouter([
@@ -24,6 +25,10 @@ const router = createBrowserRouter([
       {
         path: "/register",
         element: <Register />,
+      },
+      {
+        path: "/terms",
+        element: <Trams />,
       },
     ],
   },

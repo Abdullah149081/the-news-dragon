@@ -5,8 +5,9 @@ import { Link } from "react-router-dom";
 import { AuthContext } from "../../../provider/AuthProviders";
 
 const Register = () => {
-  const { createUser, updateUserData, validationEmail } = useContext(AuthContext);
   const [error, setError] = useState("");
+  const [accept, setAccept] = useState(false);
+  const { createUser, updateUserData, validationEmail } = useContext(AuthContext);
 
   const handlerRegister = (e) => {
     e.preventDefault();
@@ -31,6 +32,11 @@ const Register = () => {
       });
   };
 
+  const handlerAccept = (e) => {
+    // console.log(e.target.checked);
+    setAccept(e.target.checked);
+  };
+
   return (
     <div className=" login-container">
       <h2 className="text-center login-title ">Register your account</h2>
@@ -47,13 +53,19 @@ const Register = () => {
           <Form.Label className="login-text">Photo URL</Form.Label>
           <Form.Control type="text" name="photo" placeholder="Photo URL" required />
         </Form.Group>
-
         <Form.Group className="mb-3" controlId="formBasicPassword">
           <Form.Label className="login-text">Password</Form.Label>
           <Form.Control name="password" type="password" placeholder="Enter your password" />
         </Form.Group>
         <Form.Text className="text-danger">{error}</Form.Text>
-        <button type="submit" className="btn-dragon login-btn">
+        <div className="d-flex align-items-center gap-4">
+          <input onClick={handlerAccept} type="checkbox" name="checkbox" id="checkbox" />
+          <label htmlFor="checkbox">
+            Accept <Link to="/terms">Terms and Conditions</Link>
+          </label>
+        </div>
+
+        <button type="submit" className="btn btn-secondary btn-dragon login-btn" disabled={!accept}>
           Register
         </button>
         <p className="text-center">
