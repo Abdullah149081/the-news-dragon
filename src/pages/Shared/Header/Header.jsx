@@ -1,10 +1,6 @@
 import moment from "moment";
 import Container from "react-bootstrap/Container";
-import Nav from "react-bootstrap/Nav";
-import NavDropdown from "react-bootstrap/NavDropdown";
-import Navbar from "react-bootstrap/Navbar";
 import Marquee from "react-fast-marquee";
-import { Link } from "react-router-dom";
 import logo from "../../../assets/logo.png";
 import "./Header.css";
 
@@ -25,32 +21,6 @@ const Header = () => {
         <Marquee speed={50} pauseOnClick className="news-highlight">
           I can be a React component, multiple React components, or just some text.
         </Marquee>
-      </div>
-      <div style={{ marginTop: "21px" }}>
-        <Navbar collapseOnSelect expand="lg">
-          <Container>
-            <Navbar.Brand />
-            <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-            <Navbar.Collapse id="responsive-navbar-nav">
-              <Nav className="mx-auto nav-link gap-4 ">
-                <Link to="/">Home</Link>
-                <Link to="/about">About</Link>
-                <Link to="/career">Career</Link>
-                {/* <Nav.Link href="">Home</Nav.Link>
-                <Nav.Link to="/about">About</Nav.Link>
-                <Nav.Link to="/career">Career</Nav.Link> */}
-              </Nav>
-              <Nav className="d-md-inline-flex align-items-md-center">
-                <Nav.Link to="/profile">profile</Nav.Link>
-                <Nav.Link className="" eventKey={2} to="/login">
-                  <button type="button" className="btn-dragon btn-login">
-                    login
-                  </button>
-                </Nav.Link>
-              </Nav>
-            </Navbar.Collapse>
-          </Container>
-        </Navbar>
       </div>
     </Container>
   );
